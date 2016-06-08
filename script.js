@@ -11,7 +11,6 @@ Array.prototype.memory_tile_shuffle = function(){
         this[i] = temp;
     }
 }
-tile.innerHTML = '<img src="' + val + '.png"/>';
 function newBoard(){
 	tiles_flipped = 0;
 	var output = '';
@@ -24,7 +23,7 @@ function newBoard(){
 function memoryFlipTile(tile,val){
 	if(tile.innerHTML == "" && memory_values.length < 2){
 		tile.style.background = '#CCCCCC';
-		tile.innerHTML = val;
+		tile.innerHTML =  '<img src="' + val + '.jpg"/>';
 		if(memory_values.length == 0){
 			memory_values.push(val);
 			memory_tile_ids.push(tile.id);
