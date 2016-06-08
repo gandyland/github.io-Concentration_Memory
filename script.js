@@ -11,7 +11,7 @@ Array.prototype.concentration_tile_shuffle = function(){
         this[i] = temp;
     }
 }
-function newBoard(){
+function board(){
 	tiles_flipped = 0;
 	var output = '';
     concnetration_array.concentration_tile_shuffle();
@@ -37,10 +37,10 @@ function concentrationFlipTile(tile,val){
 				if(tiles_flipped == concnetration_array.length){
 					alert("Congratulations! You Win! Generating new board.");
 					document.getElementById('concentration_board').innerHTML = "";
-					newBoard();
+					board();
 				}
 			} else {
-				function flip2Back(){
+				function flipBack(){
 				    var tile_1 = document.getElementById(concentration_tile_ids[0]);
 				    var tile_2 = document.getElementById(concentration_tile_ids[1]);
 				    tile_1.style.background = 'url(card_stock.jpg) no-repeat';
@@ -50,7 +50,7 @@ function concentrationFlipTile(tile,val){
 				    concnetration_attributes = [];
             	    concentration_tile_ids = [];
 				}
-				setTimeout(flip2Back, 700);
+				setTimeout(flipBack, 1000);
 			}
 		}
 	}
