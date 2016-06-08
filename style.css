@@ -1,6 +1,12 @@
 body {
     background-color: black;
 }
+h1 {
+  text-align: center;
+  color: red
+
+
+}
 div#memory_board{
 	background:#000;
 	border:#000 3px solid;
