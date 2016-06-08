@@ -7,7 +7,7 @@ h1 {
 
 
 }
-div#memory_board{
+div#concentration_board{
 	background:#000;
 	border:#000 3px solid;
 	width:800px;
@@ -15,7 +15,7 @@ div#memory_board{
 	padding:24px;
 	margin:0px auto;
 }
-div#memory_board > div{
+div#concentration_board > div{
 	background: url(card_stock.jpg) no-repeat;
 	border:#000 1px solid;
 	width:71px;
