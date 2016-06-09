@@ -27,7 +27,8 @@ function concentrationFlipTile(tile,val){
 		if(concnetration_attributes.length == 0){
 			concnetration_attributes.push(val);
 			concentration_tile_ids.push(tile.id);
-		} else if(concnetration_attributes.length == 1){
+		}
+    else if(concnetration_attributes.length == 1){
 			concnetration_attributes.push(val);
 			concentration_tile_ids.push(tile.id);
 			if(concnetration_attributes[0] == concnetration_attributes[1]){
@@ -39,7 +40,8 @@ function concentrationFlipTile(tile,val){
 					document.getElementById('concentration_board').innerHTML = "";
 					board();
 				}
-			} else {
+			}
+      else {
 				function flipBack(){
 				    var tile_1 = document.getElementById(concentration_tile_ids[0]);
 				    var tile_2 = document.getElementById(concentration_tile_ids[1]);
