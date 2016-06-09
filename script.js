@@ -35,7 +35,7 @@ function concentrationFlipTile(tile,val){
 				concnetration_attributes = [];
             	concentration_tile_ids = [];
 				if(tiles_flipped == concnetration_array.length){
-					alert("Congratulations! You Win! Generating new board.");
+					alert("Congratulations! You Win! Time for a new game.");
 					document.getElementById('concentration_board').innerHTML = "";
 					board();
 				}
